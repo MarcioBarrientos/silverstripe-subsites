@@ -15,6 +15,10 @@ class GridFieldSubsiteDetailForm_ItemRequest extends GridFieldDetailForm_ItemReq
 	 * @return Form
 	 * @see GridFieldDetailForm_ItemRequest::ItemEditForm()
 	 */
+    private static $allowed_actions = array(
+        'doSave',
+        'ItemEditForm'
+    );
 	function ItemEditForm() {
 		$form=parent::ItemEditForm();
 		
